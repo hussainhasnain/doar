@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Apex Charts CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.css">
+
+    <!-- Jvector Map CDN Link -->
+    <link href="vectormap/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Link to our CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Doar Marketing Dashboard</title>
+</head>
+<body>
+    
+    <!-- Dashboard Starts Here -->
+
+    <!--=========================== Header starts here =============================== -->
+    <header class="header">
+        <a href="#" class="logo">do<span class="logo__span">ar</span></a>
+
+    <!-- Navigation -->
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Dashboard</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Page1</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Page2</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Page3</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Page4</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Page5</a>
+                </li>
+            </ul>
+        </nav>
+
+        
+        <div class="header__content">
+                <!-- Header Icons -->
+            <div class="header__icons">
+                <div class="header__icons--box">
+                    <i class="fa-solid fa-magnifying-glass icon icon__search"></i>
+                </div>
+
+                <div class="header__icons--box">
+                    <i class="fa-regular fa-message icon icon__msg"></i>
+                </div>
+
+                <div class="header__icons--box">
+                    <i class="fa-regular fa-bell icon icon__bell"></i>
+                </div>
+            </div>
+
+                <!-- Login buttons  -->
+            <div class="header__buttons">
+                <div class="header__buttons--box">
+                    <a href="#" class="btn btn__login">Login</a>
+                </div>
+                <div class="header__buttons--box">
+                    <a href="#" class="btn btn__signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!--=========================== Header Ends here =============================== -->
+
+
+    <!--=========================== Section Welcome starts here =============================== -->
+    <main>
+        <section class="welcome">
+            <div class="row">
+                <div class="welcome__content">
+                    <div class="welcome__textbox">
+
+                        <div class="welcome__textbox--breadcrumb">
+                            <a href="#" class="welcome__textbox--breadcrumb-link">
+                                Dashboard / 
+                            </a>
+                            <a href="#" class="welcome__textbox--breadcrumb-link welcome__textbox--breadcrumb-link-active">
+                                sales monitoring 
+                            </a>
+                        </div>
+
+                        <div class="welcome__textbox--heading">
+                            <h2 class="welcome__textbox--heading-text">
+                                Welcome To Dashboard
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="welcome__buttons">
+                        <div class="welcome__buttons--content">
+                            <a href="#" class="btn btn__email">
+                                <i class="fa-regular fa-envelope icon__envelope"></i>
+                                <p class="welcome__buttons--text">
+                                    Email
+                                </p>
+                            </a>
+
+                            <a href="#" class="btn btn__print">
+                                <i class="fa-solid fa-print icon__print"></i>
+                                <p class="welcome__buttons--text">
+                                    Print
+                                </p>
+                            </a>
+
+                            <a href="#" class="btn btn__report">
+                                <i class="fa-regular fa-file"></i>
+                                <p class="welcome__buttons--text welcome__buttons--text-report">
+                                    Generate Report
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <!--=========================== Section Welcome Ends here =============================== -->
+
+    <!--=========================== Section Stats starts here =============================== -->
+        <section class="stats">
+            <div class="row">
+                <div class="stats__content">
+
+                    <div class="stats__box stats__box--1">
+
+                        <div class="stats__box--heading">
+                            <h3 class="stats__box--heading-text">
+                                conversion rate
+                            </h3>
+                        </div>
+                        <div class="stats__box--text">
+                            <p class="stats__box--text-percentage">
+                                0.81%
+                            </p>
+                            <p class="stats__box--text-txt">
+                                <span class="stats__box--text-txt-span stats__box--text-txt-span-green">
+                                    1.2% <i class="fa-solid fa-arrow-up icon__arrowUp"></i>
+                                </span>
+                                   than last week
+                            </p>
+                        </div>
+
+                        <div id="chart-spark1">
+                            
+                        </div>
+
+                    </div>
+    
+                    <div class="stats__box stats__box--2">
+
+                        <div class="stats__box--heading">
+                            <h3 class="stats__box--heading-text">
+                                unique purchases
+                            </h3>
+                        </div>
+                        <div class="stats__box--text">
+                            <p class="stats__box--text-percentage">
+                                3,137
+                            </p>
+                            <p class="stats__box--text-txt">
+                                <span class="stats__box--text-txt-span stats__box--text-txt-span-red">
+                                    0.7% <i class="fa-solid fa-arrow-down icon__arrowDown"></i>
+                                </span>
+                                   than last week
+                            </p>
+                        </div>
+
+                        <div id="chart-spark2">
+                            
+                        </div>
+
+                    </div>
+    
+                    <div class="stats__box stats__box--2">
+
+                        <div class="stats__box--heading">
+                            <h3 class="stats__box--heading-text">
+                                avg. order value
+                            </h3>
+                        </div>
+                        <div class="stats__box--text">
+                            <p class="stats__box--text-percentage">
+                                $306.20
+                            </p>
+                            <p class="stats__box--text-txt">
+                                <span class="stats__box--text-txt-span stats__box--text-txt-span-red">
+                                    0.3% <i class="fa-solid fa-arrow-down icon__arrowDown"></i>
+                                </span>
+                                   than last week
+                            </p>
+                        </div>
+
+                        <div id="chart-spark3">
+                            
+                        </div>
+
+                    </div>
+    
+                    <div class="stats__box stats__box--1">
+
+                        <div class="stats__box--heading">
+                            <h3 class="stats__box--heading-text">
+                                order quantity
+                            </h3>
+                        </div>
+                        <div class="stats__box--text">
+                            <p class="stats__box--text-percentage">
+                                1,650
+                            </p>
+                            <p class="stats__box--text-txt">
+                                <span class="stats__box--text-txt-span stats__box--text-txt-span-green">
+                                    2.1% <i class="fa-solid fa-arrow-up icon__arrowUp"></i>
+                                </span>
+                                   than last week
+                            </p>
+                        </div>
+
+                        <div id="chart-spark4">
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    <!--=========================== Section Stats Ends here =============================== -->
+
+    <!--=========================== Section Accounts starts here =============================== -->
+        <section class="account">
+            <div class="row">
+                <div class="account__content">
+                    <div class="account__box account__box--1 area-chart">
+                        <div class="account__box--heading">
+                            <h3 class="account__box--heading-text">
+                                Account & Monthly Recurring Revenue Growth
+                            </h3>
+                        </div>
+
+                            <div class="account__box--content">
+                                <div class="account__box--content-box account__box--content-box-1">
+                                    <p class="account__box--content-box-price">
+                                        $620,076
+                                    </p>
+                                    <p class="account__box--content-box-text">
+                                        mrr growth
+                                    </p>
+                                    <p class="account__box--content-box-para">
+                                        Measure how fast you're growing monthly recurring revenue.
+                                        <a href="#" class="account__box--content-box-para-link">Learn More</a>
+                                    </p>
+                                </div>
+
+                                <div class="account__box--content-box account__box--content-box-1">
+                                    <p class="account__box--content-box-price">
+                                        $1,200
+                                    </p>
+                                    <p class="account__box--content-box-text">
+                                        avg.mrr / customer
+                                    </p>
+                                    <p class="account__box--content-box-para">
+                                        The revenue generated per account on a monthly or yearly basis.
+                                        <a href="#" class="account__box--content-box-para-link">Learn More</a>
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                            <div class="account__box account__box--2">
+                                <div class="bar-chart"></div>
+                                <div class="account__box--content">
+                                    <div class="account__box--content-box account__box--content-box-1">
+                                        <p class="account__box--content-box-price">
+                                            $1,680.50
+                                        </p>
+                                        <p class="account__box--content-box-text account__box--content-box-text-blue">
+                                            Expansions
+                                        </p>
+                                        <p class="account__box--content-box-para">
+                                            Measure how fast you're growing monthly recurring revenue.
+                                            <a href="#" class="account__box--content-box-para-link">Learn More</a>
+                                        </p>
+                                    </div>
+    
+                                    <div class="account__box--content-box account__box--content-box-1">
+                                        <p class="account__box--content-box-price">
+                                            $1,200
+                                        </p>
+                                        <p class="account__box--content-box-text account__box--content-box-text-red">
+                                            cancellations
+                                        </p>
+                                        <p class="account__box--content-box-para">
+                                            The revenue generated per account on a monthly or yearly basis.
+                                            <a href="#" class="account__box--content-box-para-link">Learn More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--=========================== Section Accounts Ends here =============================== -->
+
+    <!--=========================== Section Sales starts here =============================== -->
+
+        <section class="sales">
+            <div class="row">
+                <div class="sales__content">
+                    <div class="sales__map">
+                        <div class="sales__map--heading">
+                            <p class="sales__map--heading-text">
+                                Sales Revenue
+                            </p>
+                            <p class="sales__map--heading-location">
+                                Country
+                                <span class="sales__map--heading-location-name">
+                                    USA
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="sales__map--container">
+                            <div class="sales__map--map">
+                            
+                            </div>
+                        </div>
+
+                        <div class="sales__map--stats">
+                            <div class="sales__map--stats-content">
+
+                                <div class="sales__map--stats-content-item sales__map--stats-content-item-1">
+                                    <p class="sales__map--stats-content-item-heading">
+                                        states
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name bold">
+                                        California
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name bold">
+                                        Texas
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name bold">
+                                        Wyoming
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name bold">
+                                        Florida
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name bold">
+                                        New York
+                                    </p>
+                                </div>
+
+
+                                <div class="sales__map--stats-content-item sales__map--stats-content-item-2">
+                                    <p class="sales__map--stats-content-item-heading">
+                                        orders
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        12,201
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        11,950
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        11,198
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        12,201
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        8,560
+                                    </p>
+                                </div>
+
+
+
+                                <div class="sales__map--stats-content-item sales__map--stats-content-item-3">
+                                    <p class="sales__map--stats-content-item-heading">
+                                        Earnings
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        $150,200.80
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        $132,050.00
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        $138,020.00
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        $150,200.80
+                                    </p>
+                                    <p class="sales__map--stats-content-item-name">
+                                        $117,080.20
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="sales__stats">
+                        <div class="sales__stats--headingArea">
+                            <div class="sales__stats--headingArea-heading">
+                                <h3 class="sales__stats--headingArea-heading-text">
+                                    Your Most Recent Earnings
+                                </h3>
+                                <p class="sales__stats--headingArea-heading-para">
+                                    Your sales and referral earnings over the last 30 days
+                                </p>
+                            </div>
+                            <div class="sales__stats--headingArea-buttons">
+                                <a href="#" class="btn btn__range">Range</a>
+                                <a href="#" class="btn btn__period">Period</a>
+                            </div>
+                        </div>
+
+                        <div class="sales__stats--summary">
+
+                            <div class="sales__stats--summary-item sales__stats--summary-item-1">
+                                <div class="sales__stats--summary-item-icon primary">
+                                    <i class="fa-solid fa-chart-simple icon__chart"></i>
+                                </div>
+                                <div class="sales__stats--summary-item-content">
+                                    <p class="sales__stats--summary-item-content-text">
+                                        gross earnings
+                                    </p>
+                                    <p class="sales__stats--summary-item-content-amount">
+                                        $1,958,104
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="sales__stats--summary-item sales__stats--summary-item-2">
+                                <div class="sales__stats--summary-item-icon secondary">
+                                    <i class="fa-solid fa-chart-simple icon__chart"></i>
+                                </div>
+                                <div class="sales__stats--summary-item-content">
+                                    <p class="sales__stats--summary-item-content-text">
+                                        tax withheld
+                                    </p>
+                                    <p class="sales__stats--summary-item-content-amount">
+                                        $234,769.50
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="sales__stats--summary-item sales__stats--summary-item-3">
+                                <div class="sales__stats--summary-item-icon tertiary">
+                                    <i class="fa-solid fa-chart-simple icon__chart"></i>
+                                </div>
+                                <div class="sales__stats--summary-item-content">
+                                    <p class="sales__stats--summary-item-content-text">
+                                        net earnings
+                                    </p>
+                                    <p class="sales__stats--summary-item-content-amount">
+                                        $1,608,469.50
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="sales__stats--content">
+                            <div class="sales__stats--content-item sales__stats--content-item-1">
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    date
+                                </h3>
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    sales count
+                                </h3>
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    gross earnings
+                                </h3>
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    tax withheld
+                                </h3>
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    net earnings
+                                </h3>
+                                
+                            </div>
+
+                            <div class="sales__stats--content-item sales__stats--content-item-2">
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    03/04/2018
+                                </h3>
+                                <p class="sales__stats--content-item-data">
+                                    1,050
+                                </p>
+                                <p class="sales__stats--content-item-data color-primary">
+                                    + $32,580.00	
+                                </p>
+                                <p class="sales__stats--content-item-data color-secondary">
+                                    - $3,023.10
+                                </p>
+                                <p class="sales__stats--content-item-data">
+                                    $28,670.90 
+                                    <span class="color-primary">
+                                        <i class="fa-solid fa-arrow-up icon__arrowUp"></i>4.5%
+                                    </span>
+                                </p>
+                                
+                            </div>
+
+
+                            <div class="sales__stats--content-item sales__stats--content-item-2">
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    03/04/2018
+                                </h3>
+                                <p class="sales__stats--content-item-data">
+                                    980
+                                </p>
+                                <p class="sales__stats--content-item-data color-primary">
+                                      + $32,580.00	
+                                </p>
+                                <p class="sales__stats--content-item-data color-secondary">
+                                    - $3,023.10
+                                </p>
+                                <p class="sales__stats--content-item-data">
+                                    $26,930.40 
+                                    <span class="color-secondary">
+                                        <i class="fa-solid fa-arrow-down icon__arrowDown"></i>0.8%
+                                    </span>
+                                </p>
+                                
+                            </div>
+
+
+                            <div class="sales__stats--content-item sales__stats--content-item-3">
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    03/04/2018
+                                </h3>
+                                <p class="sales__stats--content-item-data">
+                                    980
+                                </p>
+                                <p class="sales__stats--content-item-data color-primary">
+                                      + $32,580.00	
+                                </p>
+                                <p class="sales__stats--content-item-data color-secondary">
+                                    - $3,023.10
+                                </p>
+                                <p class="sales__stats--content-item-data">
+                                    $26,930.40 
+                                    <span class="color-secondary">
+                                        <i class="fa-solid fa-arrow-down icon__arrowDown"></i>0.8%
+                                    </span>
+                                </p>
+                                
+                            </div>
+
+                            
+                            <div class="sales__stats--content-item sales__stats--content-item-4">
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    03/04/2018
+                                </h3>
+                                <p class="sales__stats--content-item-data">
+                                    980
+                                </p>
+                                <p class="sales__stats--content-item-data color-primary">
+                                      + $32,580.00	
+                                </p>
+                                <p class="sales__stats--content-item-data color-secondary">
+                                    - $3,023.10
+                                </p>
+                                <p class="sales__stats--content-item-data">
+                                    $26,930.40 
+                                    <span class="color-secondary">
+                                        <i class="fa-solid fa-arrow-down icon__arrowDown"></i>0.8%
+                                    </span>
+                                </p>
+                                
+                            </div>
+                            
+
+                            <div class="sales__stats--content-item sales__stats--content-item-5">
+                                <h3 class="sales__stats--content-item-heading grey-dark">
+                                    03/04/2018
+                                </h3>
+                                <p class="sales__stats--content-item-data">
+                                    980
+                                </p>
+                                <p class="sales__stats--content-item-data color-primary">
+                                      + $32,580.00	
+                                </p>
+                                <p class="sales__stats--content-item-data color-secondary">
+                                    - $3,023.10
+                                </p>
+                                <p class="sales__stats--content-item-data">
+                                    $26,930.40 
+                                    <span class="color-secondary">
+                                        <i class="fa-solid fa-arrow-down icon__arrowDown"></i>0.8%
+                                    </span>
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="sales__stats--download">
+                            <div class="sales__stats--download-icon">
+                                <i class="fa-solid fa-download icon__download"></i>
+                            </div>
+                            <div class="sales__stats--download-content">
+                                <h3 class="sales__stats--download-content-heading">
+                                    Download your earnings in CSV format.
+                                </h3>
+                                <p class="sales__stats--download-content-para">
+                                    Open it in a spreadsheet and perform your own calculations, graphing etc. The CSV file contains additional details, such as the buyer location.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- Jquery CDN Link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Font Awesome JS CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Apex Charts CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Jvector Map CDN Link -->
+    <script type="text/javascript" src="vectormap/dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="vectormap/dist/maps/jquery.vmap.usa.js" charset="utf-8"></script>
+    
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,801 @@
+/* ==================== CSS File =================== */
+/* ==================== Media Queries =================== */
+/* ==================== Fonts =================== */
+/* ==================== Colors =================== */
+/* ==================== Center our content =================== */
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 75em) {
+  .row {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .row {
+    max-width: 55rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 24em) {
+  .row {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+
+/* ==================== Basic Styling =================== */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #000;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.primary {
+  background-color: #56e9e9;
+}
+
+.secondary {
+  background-color: #f85aa7;
+}
+
+.tertiary {
+  background-color: #9dc9ff;
+}
+
+.grey-dark {
+  color: #888;
+}
+
+.color-primary {
+  color: #56e9e9;
+}
+
+.color-secondary {
+  color: #f85aa7;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 47.35%;
+  }
+}
+
+@media only screen and (max-width: 24em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* =================== Header starts here ======================== */
+/* =================== Logo ======================== */
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo__span {
+  color: #4545fd;
+}
+
+/* =================== Navigation ======================== */
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.main-nav__link {
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.main-nav__link:hover {
+  color: #f85aa7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #c6d8e7;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.header__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+/* =================== Icons ======================== */
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #f85aa7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.icon__search {
+  font-size: 1.8rem;
+}
+
+.icon__msg {
+  font-size: 1.8rem;
+}
+
+.icon__bell {
+  font-size: 1.8rem;
+}
+
+.icon__arrowUp {
+  margin-right: 0.4rem;
+}
+
+.icon__arrowDown {
+  margin-right: 0.6rem;
+}
+
+.icon__chart {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.icon__download {
+  font-size: 6rem;
+  color: #c6d8e7;
+}
+
+/* =================== Buttons ======================== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+}
+
+.btn__login {
+  background-color: #56e9e9;
+  color: #000;
+}
+
+.btn__login:hover {
+  background-color: #2af1f1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn__signup {
+  background-color: #f85aa7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn__signup:hover {
+  background-color: #f14196;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #888;
+  border-radius: 0.4rem;
+}
+
+.btn__print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #888;
+  border-radius: 0.4rem;
+}
+
+.btn__report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #888;
+  border-radius: 0.4rem;
+  background-color: #4545fd;
+  color: #fff;
+}
+
+.btn__range {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #c6d8e7;
+  border-radius: 0.4rem;
+  background-color: #ecf1f5;
+}
+
+.btn__period {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #c6d8e7;
+  border-radius: 0.4rem;
+}
+
+/* =================== Header Ends here ======================== */
+/* =================== Section Welcome starts here ======================== */
+.welcome {
+  padding: 3rem 0;
+}
+
+.welcome__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.welcome__textbox {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.welcome__textbox--breadcrumb-link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.welcome__textbox--breadcrumb-link-active {
+  color: #4545fd;
+}
+
+.welcome__textbox--heading {
+  margin-top: 0.5rem;
+}
+
+.welcome__textbox--heading-text {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.welcome__buttons {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.welcome__buttons--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.welcome__buttons--text {
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.welcome__buttons--text:hover {
+  color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.welcome__buttons--text-report {
+  color: #fff;
+}
+
+.welcome__buttons--text-report:hover {
+  color: #fff;
+}
+
+/* =================== Section Welcome Ends here ======================== */
+/* =================== Section Stats starts here ======================== */
+.stats__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.8rem;
+}
+
+.stats__box {
+  border: 1px solid #c6d8e7;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 0.4rem;
+}
+
+.stats__box--heading-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.stats__box--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1rem;
+}
+
+.stats__box--text-percentage {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.stats__box--text-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.stats__box--text-txt-span-green {
+  color: green;
+}
+
+.stats__box--text-txt-span-red {
+  color: red;
+}
+
+.stats__box--graph {
+  height: 100%;
+}
+
+/* =================== Section Stats Ends here ======================== */
+/* =================== Section Account starts here ======================== */
+.account {
+  margin-top: 2rem;
+}
+
+.account__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+.account__box--2 {
+  padding: 0.5rem 0;
+}
+
+.account__box--heading {
+  padding: 1rem;
+}
+
+.account__box--heading-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.account__box--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account__box--content-box {
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.account__box--content-box-price {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.account__box--content-box-text {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.account__box--content-box-text-blue {
+  color: #4545fd;
+}
+
+.account__box--content-box-text-red {
+  color: #f85aa7;
+}
+
+.account__box--content-box-para {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.account__box--content-box-para-link {
+  color: #4545fd;
+}
+
+.account__box--1 {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  border: 1px solid #c6d8e7;
+  border-radius: 0.4rem;
+}
+
+.account__box--2 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: 1px solid #c6d8e7;
+  border-radius: 0.4rem;
+}
+
+.apexcharts-legend {
+  position: absolute;
+  top: -5rem;
+  /* Adjust the top position as needed */
+  right: 100%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+/* =================== Section Account Ends here ======================== */
+/* =================== Section Sales starts here ======================== */
+.sales {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.sales__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+}
+
+.sales__map {
+  -webkit-box-flex: 35%;
+      -ms-flex: 35%;
+          flex: 35%;
+  border: 1px solid #c6d8e7;
+}
+
+.sales__map--heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid #c6d8e7;
+}
+
+.sales__map--heading-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sales__map--heading-location {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.sales__map--heading-location-name {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.sales__map--map {
+  width: 100%;
+  min-height: 20rem;
+}
+
+.sales__map--container {
+  padding: 2rem;
+}
+
+.sales__map--stats-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(2rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+  line-height: 2.5;
+  text-align: center;
+}
+
+.sales__map--stats-content-item-heading {
+  font-size: 1.3rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.sales__map--stats-content-item-name {
+  font-size: 1.2rem;
+}
+
+.sales__stats {
+  -webkit-box-flex: 65%;
+      -ms-flex: 65%;
+          flex: 65%;
+  padding: 1rem;
+  border: 1px solid #c6d8e7;
+}
+
+.sales__stats--headingArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sales__stats--headingArea-heading-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.sales__stats--headingArea-heading-para {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.sales__stats--summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #c6d8e7;
+}
+
+.sales__stats--summary-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.sales__stats--summary-item-icon {
+  padding: 1.4rem 2rem;
+  border-radius: 0.4rem;
+}
+
+.sales__stats--summary-item-content {
+  line-height: 1.4;
+}
+
+.sales__stats--summary-item-content-text {
+  font-size: 1.3rem;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.sales__stats--summary-item-content-amount {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.sales__stats--content {
+  text-align: center;
+}
+
+.sales__stats--content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #c6d8e7;
+  margin-bottom: 1rem;
+}
+
+.sales__stats--content-item-heading {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sales__stats--content-item-data {
+  font-size: 1.3rem;
+}
+
+.sales__stats--download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.sales__stats--download-icon {
+  -webkit-box-flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
+}
+
+.sales__stats--download-content-heading {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.sales__stats--download-content-para {
+  font-size: 1.4rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+/* =================== Section Sales Ends here ======================== */
+/* =================== Section Customers starts here ======================== */
+/*# sourceMappingURL=style.css.map */
