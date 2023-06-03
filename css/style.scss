@@ -216,6 +216,20 @@ body{
         font-size: 6rem;
         color: $color-grey-light;
     }
+    &__refresh{
+        font-size: 2.7rem;
+        color: $color-grey-dark;
+        font-weight: 600;
+    }
+    &__dots{
+        font-size: 2.7rem;
+        color: $color-grey-dark;
+    }
+    &__tick{
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-white;
+    }
 }
 
 /* =================== Buttons ======================== */
@@ -492,14 +506,13 @@ body{
 
 .sales{
     margin-top: 2rem;
-    margin-bottom: 10rem;
     &__content{
         display: flex;
         align-items: flex-start;
         gap: 1rem;        
     }
     &__map{
-        flex: 35%;
+        flex: 38%;
         border: 1px solid $color-grey-light;
         &--heading{
             display: flex;
@@ -548,7 +561,7 @@ body{
         }
     }
     &__stats{
-        flex: 65%;
+        flex: 77%;
         padding: 1rem;
         border: 1px solid $color-grey-light;
         &--headingArea{
@@ -652,8 +665,86 @@ body{
 /* =================== Section Sales Ends here ======================== */
 
 /* =================== Section Customers starts here ======================== */
+.customers{
+    margin-top: 2rem;
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        &--box{
+            flex: 33.33%;
+            border: 1px solid $color-grey-light;
+            &-heading{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid $color-grey-light;
+                padding: 1rem;
+                &-text{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+                &-icons{
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+            &-item{
+                border-bottom: 1px solid $color-grey-light;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                &-left{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    &-icon{
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &-text{
+                        &-heading{
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                        }
+                        &-para{
+                            font-size: 1.2rem;
+                            color: $color-grey-dark;
+                        }
+                    }
+                }
+                &-right{
+                    &-text{
+                        &-heading{
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                        }
+                        &-para{
+                            font-size: 1.2rem;
+                            
+                        }
+                    }
+                }
+            }
+            &-3{
+                &-content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &-box{
 
-
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
